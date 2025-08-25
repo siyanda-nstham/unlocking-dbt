@@ -1,0 +1,8 @@
+packages:
+  - name: dbt_utils
+    package: dbt-labs/dbt_utils
+    version: 1.3.0
+  - name: codegen
+    package: dbt-labs/codegen
+    version: 0.13.1
+sha1_hash: 80f8aa76236a3cd13f5cb961e28a301ca7af54bd
