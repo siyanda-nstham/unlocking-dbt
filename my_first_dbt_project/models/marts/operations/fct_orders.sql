@@ -12,7 +12,7 @@ select
   ord.SalesPerson,  
   ord.OrderStatus,
   ord.OrderPlacedTimestamp,
-  1 as Order
+  1 as OrderFlag
 from {{ ref('stg_furniture_mart_orders') }} as ord
 
 left join {{ ref('customers_snapshot_timestamp_strategy') }} as cus

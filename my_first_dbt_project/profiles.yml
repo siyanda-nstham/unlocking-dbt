@@ -2,34 +2,34 @@ my_first_dbt_project:
   target: dev
   outputs:
     dev:
-      account: YOUR_ACCOUNT_HERE
-      database: dbt_learning
-      password: YOUR_PASSWORD_HERE
-      role: dbt_transformer
-      schema: YOUR_NAME_HERE
-      threads: 8
+      account: TKYQRIU-MV16541
+      database: DEV_DATABASE
+      password: "zs9Zg3eARrnT4VB"
+      role: ACCOUNTADMIN
+      schema: staging
+      threads: 1
       type: snowflake
-      user: YOUR_USER_HERE
-      warehouse: dbt
+      user: SMPUNGA01
+      warehouse: COMPUTE_WH
 
-    prod:
-      account: YOUR_ACCOUNT_HERE
-      database: analytics
-      password: YOUR_PASSWORD_HERE
-      role: dbt_transformer
-      schema: public
-      threads: 8
-      type: snowflake
-      user: YOUR_USER_HERE
-      warehouse: dbt
+    # prod:
+      # account: TKYQRIU-MV16541
+      # database: analytics
+      # password: "zs9Zg3eARrnT4VB"
+      # role: ACCOUNTADMIN
+      # schema: public
+      # threads: 8
+      # type: snowflake
+      # user: SMPUNGA01
+      # warehouse: COMPUTE_WH
 
-    ci:
-      account: YOUR_ACCOUNT_HERE
-      database: analytics_{{ env_var('DBT_PR_NUMBER')}}
-      password: YOUR_PASSWORD_HERE
-      role: dbt_transformer
-      schema: public
-      threads: 8
-      type: snowflake
-      user: YOUR_USER_HERE
-      warehouse: dbt
+    # ci:
+      # account: TKYQRIU-MV16541
+      # database: analytics_{{ env_var('COMPUTE_WH_PR_NUMBER')}}
+      # password: "zs9Zg3eARrnT4VB"
+      # role: ACCOUNTADMIN
+      # schema: public
+      # threads: 8
+      # type: snowflake
+      # user: SMPUNGA01
+      # warehouse: COMPUTE_WH

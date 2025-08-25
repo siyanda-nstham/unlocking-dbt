@@ -25,6 +25,8 @@ on-run-end: ["{{ insert_log_records('dbt_logs') }}"]
 
 models:
   my_first_dbt_project:
+    miscellaneous_chapter_resources:  # sub-directory matcher
+      +enabled: false                 # disable every model underneath
     staging:
       +schema: staging
       crm:
